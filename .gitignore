@@ -6,6 +6,13 @@ Lib
 Include
 Scripts
 pyvenv.cfg
+bin
+include
+lib
+lib64
 
-#Flask
+# Flask
 *_pycache_*
+
+# Replit
+.upm

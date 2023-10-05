@@ -1,7 +1,8 @@
 import os
 from flask import Flask, request, jsonify
 
-from translate import translate_path
+from translate import _translate_path
+from security import security_check
 
 app = Flask(__name__)
 
@@ -9,6 +10,9 @@ app = Flask(__name__)
 def hello():
   return "hello"
 
-@app.route("/translate")
+@app.route("/translate", methods=["POST"])
 def translate_path():
-  return translate_path(request)
+  if (security_check):
+    return _translate_path(request)
+  else:
+    return "", 400
