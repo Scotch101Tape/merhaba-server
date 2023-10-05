@@ -1,8 +1,11 @@
 import os
 from flask import Flask, request, jsonify
+from dotenv import load_dotenv
 
 from translate import _translate_path
 from security import security_check
+
+load_dotenv()
 
 app = Flask(__name__)
 
