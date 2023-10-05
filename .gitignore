@@ -1,0 +1,11 @@
+# Env
+google-env.json
+
+# Python venv
+Lib
+Include
+Scripts
+pyvenv.cfg
+
+#Flask
+*_pycache_*
