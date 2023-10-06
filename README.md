@@ -11,7 +11,8 @@ This is the server/backend for the Merhaba app.
 3. `python -m venv .`
 4. `source ./bin/activate`
 5. `pip install -r requirements.txt`
-6. The setup is done, to start the server run `flask --app ./src/main.py run`
+6. Create a `.env` and fill in the keys provided in `.env-example`
+7. The setup is done, to start the server run `flask --app ./src/main.py run`
 
 ### Local Windows
 
@@ -20,7 +21,8 @@ This is the server/backend for the Merhaba app.
 3. `python -m venv .`
 4. `.\Scripts\activate`
 5. `pip install -r requirements.txt`
-6. The setup is done, to start the server run `flask --app ./src/main.py run`
+6. Create a `.env` and fill in the keys provided in `.env-example`
+7. The setup is done, to start the server run `flask --app ./src/main.py run`
 
 ### Replit
 
@@ -28,4 +30,5 @@ This is the server/backend for the Merhaba app.
 2. `python -m venv .`
 3. `source ./bin/activate`
 4. `pip install -r requirements.txt`
-5. The setup is done, to start the server run `flask --app ./src/main.py --host 0.0.0.0 run`
+5. Set replit secrets to mirror those in the `.env-example`
+6. The setup is done, to start the server run `flask --app ./src/main.py --host 0.0.0.0 run`
