@@ -32,9 +32,9 @@ def _find_places_path(request):
 
     # Get the results
     results = client.places(
-      "restaurant",
+      query,
       location=location,
-    )
+    )["results"]
 
     # Return the results
     return jsonify(results)
