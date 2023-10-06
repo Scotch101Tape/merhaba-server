@@ -31,7 +31,7 @@ This is the server/backend for the Merhaba app.
 3. `source ./bin/activate` (Do this every time you start a new session)
 4. `pip install -r requirements.txt` (Do this every time requirements.txt is updated)
 5. Set replit secrets to mirror those in the `.env-example` (Make sure to keep the secrets updated with `.env-example`)
-6. The setup is done, to start the server run `flask --app ./src/main.py --host 0.0.0.0 run` (Do this every time you want to restart the program)
+6. The setup is done, to start the server run `flask --app ./src/main.py run --host 0.0.0.0` (Do this every time you want to restart the program)
 
 ## Commiting
 - Don't commit the `.env` (It should already be in the `.gitignore` but this is very crucial)
