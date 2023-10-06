@@ -18,7 +18,7 @@ This is the server/backend for the Merhaba app.
 1. Clone the repo
 2. Set current directory as repo
 3. `python -m venv .`
-4. `./Scripts/activate`
+4. `.\Scripts\activate`
 5. `pip install -r requirements.txt`
 6. The setup is done, to start the server run `flask --app ./src/main.py run`
 
