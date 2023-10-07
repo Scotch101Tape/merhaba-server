@@ -5,9 +5,10 @@ from credentials import google_maps_key
 
 # Codes for types of places
 CODES = {
-  "RESTAURANT": 1,
+  "RESTAURANT": 1, # Unused atm
   "GROCERY": 2,
   "MOSQUE": 3,
+  "CLOTHING": 4
 }
 
 # Google maps stuff
@@ -21,12 +22,12 @@ def _find_places_path(request):
 
     # Choose a query for the api based on the code sent
     query = ""
-    if (code == CODES["RESTAURANT"]):
-      query = "halal restaurant"
-    elif (code == CODES["GROCERY"]):
+    if (code == CODES["GROCERY"]):
       query = "halal grocery"
     elif (code == CODES["MOSQUE"]):
       query = "mosque"
+    elif (code == CODES["CLOTHING"]):
+      query = "islamic clothing"
     else:
       raise "Not yet implemented"
 
