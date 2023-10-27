@@ -5,6 +5,7 @@ from flask import Flask, request, jsonify
 from translate import _translate_path
 from find_places import _find_places_path
 from place_details import _place_details_path
+from translate_speech import _translate_speech_path
 from security import security_check
 
 # Flask stuff
@@ -36,5 +37,13 @@ def find_places_path():
 def place_details_path():
   if (security_check):
     return _place_details_path(request)
+  else:
+    return "", 400
+
+@app.route("/translate-speech", methods=["POST"])
+def translate_speech_path():
+  print("here")
+  if (security_check):
+    return _translate_speech_path(request)
   else:
     return "", 400
